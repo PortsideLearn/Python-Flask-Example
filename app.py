@@ -7,7 +7,7 @@ app.static_folder = 'static'
 
 @app.route('/')
 def index():
-    news = random.choice(['Putin dont prisedent, 
+    news = random.choice(['Putin dont prisedent', 
                           'Zirinovski is dead', 
                           'Portside is best programmer'])
     return render_template('index.html', news=news)
