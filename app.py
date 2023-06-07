@@ -15,7 +15,8 @@ def index():
     news = random.choice(['Putin dont prisedent', 
                           'Zirinovski is dead', 
                           'Portside is best programmer'])
-    return render_template('index.html', news=news) # render html page 
+    return render_template('index.html', news=news) # render html page from directory: /templates/index.html
+    # Directory "/templates/" is standart directory in framework "Flask" for rendering html-pages
   
   # start application
   if __name__ == "__main__":
