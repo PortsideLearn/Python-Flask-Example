@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, session
+from jinja2 import Template
 import random
 
 app = Flask(__name__)
