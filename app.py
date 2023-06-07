@@ -4,12 +4,12 @@ from jinja2 import Template
 import random
 
 # settings app
-app = Flask(__name__)
+app = Flask(__name__) # application initialization
 app.secret_key = 'your secret key'
-app.static_folder = 'static'
+app.static_folder = 'static' # Flask standart directory for JavaScript, CSS, Images, Videos 
 
 # create a main page
-@app.route('/')
+@app.route('/main/') # Your link to web-page, example: "http://127.0.0.1/main/" 
 def index():
     # create random news for html page
     news = random.choice(['Putin dont prisedent', 
