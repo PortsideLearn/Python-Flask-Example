@@ -13,7 +13,7 @@ app.static_folder = 'static' # Flask standart directory for JavaScript, CSS, Ima
 def index():
     # create random news for html page
     news = random.choice(['Putin dont prisedent', 
-                          'Zirinovski is dead', 
+                          'Zirinovski - dead', 
                           'Portside is best programmer'])
     return render_template('index.html', news=news) # render html page from directory: /templates/index.html
     # Directory "/templates/" is standart directory in framework "Flask" for rendering html-pages
